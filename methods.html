@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array methods</title>
+</head>
+
+<body>
+    <script>
+        var a = [21, 1, 31, 4, 51, 6];
+        var b = [1, 2, 3, 4, 5];
+        console.log(a.sort(hello));
+        function hello(a, b) {
+            console.log(a, b);
+            return a - b;
+        }
+        let c = ["Banana", "Apple"];
+        let d = ["Orange", "Mango"]
+        console.log("concat of c and d");
+        console.log(c.concat(d));
+        console.log("length of a");
+        console.log(a.length);
+        console.log("tostring of c");
+        console.log(c.toString());
+        console.log(a);
+        console.log("pop of a");
+        console.log(a.pop());
+        console.log(a);
+        console.log("push of a");
+        console.log(a);
+        console.log(a.push(8));
+        console.log(a);
+        console.log(a.shift());
+        console.log(a);
+        console.log(a.unshift(9));
+        console.log(a);
+        console.log(c.join("%"));
+        console.log(b.join("^"));
+        console.log(c);
+        delete c[1];
+        console.log(c);
+        var e = [1, [2, 3], [4, 5]]
+        console.log(e.flat());
+        console.log("splice add");
+        console.log(a);
+        console.log(a.splice(1, 0, "hi", "hello"));
+        console.log("without using splice");
+        
+        let fruits = ['apple', 'banana', 'mango', 'orange'];
+        let x = 2;
+        let y = [];
+
+        for (i = 0; i < fruits.length; i++) {
+            if (i !== x) {
+                y.push(fruits[i]);
+            }
+        }
+        console.log(y);
+        let z = 'kiwi';
+
+        for (i = 0; i < fruits.length; i++) {
+            if (i === x) {
+                fruits[i] = z;
+            }
+        }
+        console.log(fruits);
+    </script>
+</body>
+
+</html>
